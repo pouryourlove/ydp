@@ -1,0 +1,36 @@
+
+
+.title:hover{
+    background-color: blue;
+    color:white;
+    
+}
+
+textarea:focus{
+    background-color: orange;
+}
+
+
+button:active{
+    color:blue;
+    background-color: orange;
+}
+
+[checked]{
+    background-color: red;
+}
+
+#red:checked + label{
+    background-color: red ;
+}
+
+#blue:checked + label{
+    background-color: blue;
+}
+
+#yellow:checked + label{
+    background-color: yellow;
+}
+
+
+
