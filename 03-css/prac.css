@@ -1,0 +1,19 @@
+*{
+    color:white;
+}
+
+body{
+    background-color: gray;
+}
+
+span{
+    background-color: red;
+}
+
+#id{
+    background-color: blue;
+}
+
+.second{
+    background-color: green;
+}
