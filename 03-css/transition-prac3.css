@@ -1,0 +1,26 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: solid 1px black;
+    margin-left: 40px;
+}
+
+#item1:hover {
+    transform: scaleX(2);
+}
+
+#item2:hover{
+    transform: skewX(-30deg)
+}
+
+#item3:hover{
+    
+}
+
+#item4:hover{
+    background-color: yellow;
+    transform: rotateY(180deg) scale(2);
+    
+
+}

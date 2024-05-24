@@ -1,0 +1,22 @@
+
+
+
+
+
+
+
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color:white;
+    overflow: auto;
+    margin: 500px 500px;
+
+}
+
+div:hover{
+    transform: scale(3,3);
+    transition: transform 1s; 
+}

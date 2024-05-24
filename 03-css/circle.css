@@ -1,0 +1,12 @@
+
+
+
+.circle{
+    border: 8px solid white;
+    outline: 10px solid pink;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: url(./image/dog.jpeg);
+    background-size: cover;
+}

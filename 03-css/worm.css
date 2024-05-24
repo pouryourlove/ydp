@@ -1,0 +1,43 @@
+
+.container{
+    position: relative;
+}
+
+.circle {
+    width:150px;
+    height: 150px;
+    border-radius: 50%; 
+    border:1px solid black;
+    position: absolute;
+}
+
+.item1{
+    background-color: rgb(2, 2, 124);
+    top: 100px;
+    left: 50px;
+}
+
+.item2 {
+    background-color: rgb(19, 19, 208);
+    top: 180px;
+    left: 120px;
+}
+
+.item3 {
+    background-color: rgba(50, 50, 202);
+    top: 250px;
+    left: 200px;
+}
+
+.item4 {
+    background-color: rgb(138, 138, 226);
+    top: 350px;
+    left: 250px
+}
+
+.item5 {
+    background-color: rgb(203, 203, 239);
+    top: 450px;
+    left: 300px;
+}
+
