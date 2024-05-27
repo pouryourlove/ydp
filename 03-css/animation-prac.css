@@ -1,0 +1,56 @@
+.body{
+    margin: 0;
+    padding: 0;
+}
+
+.ball{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    position:relative;
+
+    animation-name: ball;
+    animation-duration: 2s;
+    animation-delay: 1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes ball {
+    0% {
+        transform: translate(0, 0);
+    }
+    25% {
+        transform: translate(calc(100vw - 100px), 0);
+    }
+    50% {
+        transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+    }
+    75% {
+        transform: translate(0, calc(100vh - 100px));
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.paragrah{
+    animation-name: words;
+    animation-duration: 2s;
+    animation-delay: 1s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes words {
+    0%{
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+/* vw, vh: viewPort 단위 */
