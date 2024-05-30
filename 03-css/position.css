@@ -1,6 +1,4 @@
-body{
 
-}
 
 div{
     width: 100px;
@@ -42,8 +40,8 @@ div{
      - position속성을 갖는 제일 가까운 조상 기준.  조상이 없다면 ? body 기준
      - 특정 요소를 기준삼아서 top, bottom, left, right 씩 움직이겠다.
      - 배치가 바뀌면 기존 자리가 없어진다.
-     - 누군가에게 항상 의존하는 친구
-*/
+     - 누군가에게 항상 의존하는 친구 */
+
 
 
 .position-absolute{
@@ -56,8 +54,9 @@ div{
     fixed: 고정 위치
     - viewport(브라우저의 화면 전체)를 기준으로 특정 위치 배치
     - 스크롤이 되어도 움직이지 않음. 
-    - header,footer에 많이 사용. 
+    - header,footer에 많이 사용.
 */
+
 
 .position-fixed {
     background-color: coral;
