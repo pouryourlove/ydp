@@ -38,11 +38,11 @@ html {
 
 /* 
     %단위
-    -상위 요소의 상대적인 크기(부모 요소 영향
+    -상위 요소의 상대적인 크기(부모 요소 영향)
 */
 
 .pct-parent {
-    width: 300px;
+    width: 500px;
     height: 500px;
     background-color: plum;
 }
@@ -98,12 +98,20 @@ html {
     브라우저 사이즈(1200px, 900px) 일 때, 
     5vw, 5vh의 값은?
     1vw = 12px => 5vw = 60px
-    1vh =9px => 5vh - 45px
+    1vh =9px => 5vh = 45px
 
 */
 
 .vw {
     height: 20vw;
+    width: 20vw;
+    background: coral;
+}
+
+.vh {
+    height: 20vh;
+    width: 20vh;
+    background-color: skyblue;
 }
 
 /* css 변수 */
