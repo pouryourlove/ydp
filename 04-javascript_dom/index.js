@@ -43,3 +43,16 @@ console.log(obj === obj2); //true
 //obj와 obj2는 현재 데이터도 같고 참조값 (address,주소)도 같다.
 
 console.log("--------------------------");
+
+const obj3  = {one: 1, two:2};
+const obj4 = {one: 1, two: 2};
+console.log(obj3, obj4)// {one: 1, two:2}
+console.log(obj3 === obj4); // false
+
+//why?
+//obj3과 obj4는 현재 데이터가 같지만, 서로 다른 별도의 객체이다.
+//즉, 참조값 (address, 주소)가 다르다.
+
+obj3.five = 5;
+console.log(obj3, obj4);
+console.log(obj3 === obj4); //false
