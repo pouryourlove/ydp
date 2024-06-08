@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width:700px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .box {
+        background-color: lightblue;
+    }
+}
