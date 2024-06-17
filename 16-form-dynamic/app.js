@@ -21,7 +21,30 @@ app.get("/ajax", (req, res) => {
 });
 
 app.post("/ajax", (req, res) => {
-  console.log(req.body); // parser없으면 body 안보인다.
+  console.log(req.body); // parser없으면 body 안보인다. post여서 body임
+  res.send(req.body);
+});
+
+//axios
+
+app.get("/axios", (req, res) => {
+  console.log(req.query);
+  res.send(req.query);
+});
+
+app.post("/axios", (req, res) => {
+  console.log(req.body);
+  res.send(req.body);
+});
+
+//fetch
+app.get("/fetch", (req, res) => {
+  console.log(req.query);
+  res.send(req.query);
+});
+
+app.post("/fetch", (req, res) => {
+  console.log(req.body);
   res.send(req.body);
 });
 
