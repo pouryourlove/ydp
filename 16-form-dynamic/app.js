@@ -48,6 +48,11 @@ app.post("/fetch", (req, res) => {
   res.send(req.body);
 });
 
+//fetchURL
+app.get("/fetchURL", (req, res) => {
+  res.send(req.query)
+})
+
 app.listen(PORT, () => {
   console.log("server is running on port 8000");
 });

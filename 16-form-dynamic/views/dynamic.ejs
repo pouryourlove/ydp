@@ -36,6 +36,7 @@
       <button type="button" onclick="axiosPost()">axios post 방식 요청</button>
       <button type="button" onclick="fetchGet()">fetch get 방식 요청</button>
       <button type="button" onclick="fetchPost()">fetch post 방식 요청</button>
+      <button type="button" onclick="fetchURL()">fetchURL </button>
     </form>
     <button onclick="getTodos()">외부 API를 이용해 todo 불러오기</button>
 
@@ -44,6 +45,15 @@
 
     <script>
       const resultBox = document.querySelector(".result");
+
+      function fetchURL() {
+        fetch("https://dog.ceo/api/breeds/image/random")
+          .then((res) => res.json())
+          .then((json) => {
+            console.log(json)
+            resultBox.innerHTML = `<img src="${json.message}"/>`
+          })
+      }
 
       function getTodos() {
         fetch("https://jsonplaceholder.typicode.com/todos/10")
