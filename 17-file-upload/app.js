@@ -11,7 +11,10 @@ app.use(express.json());
 
 
 //multer 미들웨어 등록
+app.use('/static', express.static(__dirname + "/public"));
 app.use("/uploads", express.static(__dirname + "/uploads")); //보안상 두개 이름을 다르게 하는게 좋다. 
+
+
 //__dirname : 현재위치
 // const upload = multer({
 //   dest: "uploads/",
@@ -72,6 +75,11 @@ app.post("/upload/fields", uploadDetail.fields([{name: 'kiwi'},{name:'orange'}])
 //파일 탐색기 > uploads 폴더가 생성! 
 //확장자 없이 파일명이 자동으로 저장됨(multer 객체를 생성할 때 dest 옵션 외에 설정을 한게 없어서)
 //파일 탐색기에서 png, jpg 등의 확장자를 붙여보면 우리가 업로드한 파일
+
+app.post('/dynamicFile', uploadDetail.single('thumbnail'), (req,res) => {
+  res.send(req.file);
+})
+
 
 app.get("/", function (req, res) {
   res.render("index", { title: "파일 업로드를 배워보자" });
