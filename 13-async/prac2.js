@@ -45,14 +45,3 @@ call('kim')
    
     
     
-    async function exec(){
-        try{
-           
-        }
-        catch(err) {
-           
-        }
-     
-    }
-    
-    exec();
