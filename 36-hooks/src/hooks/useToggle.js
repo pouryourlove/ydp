@@ -1,6 +1,7 @@
  import React,{useState} from 'react'
  
  //매개변수를 false로 초기화
+ //(initValue = false) => 매개변수
  function useToggle(initvalue = false) {
     const [value, setValue] = useState(initvalue)
     // value = 토글의 상태 
@@ -10,6 +11,10 @@
     const toggleValue = () => {
         setValue(!value);
     }
+
+    //훅의 결과로 반환할 값들 정의 
+    //훅의 목적에 맞는 적절한 반환 형식을 선택(배열, 객체,단순값 가능)
+
    return [value, toggleValue]
 
    //두 가지 값을 반환 할 것!
