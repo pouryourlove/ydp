@@ -1,0 +1,14 @@
+.bookImg{
+    width: 200px;
+    height: 300px;
+}
+
+.bestseller {
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.bookDetail{
+    text-align:left
+}
